@@ -1,0 +1,212 @@
+
+.buttonStyle {
+  -fx-text-fill: #f1eff4;
+  -fx-background-color: transparent;
+  -fx-border-color: #6798D2;
+  -fx-border-radius: 0;
+}
+
+.buttonStyle:hover {
+	-fx-background-color: #6798D2;
+}
+
+.shadow {
+	-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,8), 10, 0, 0, 0);
+}
+
+.hover_login:hover {
+	-fx-background-color: #6798D2;
+}
+
+.hover_border:hover {
+	-fx-border-color:  #6798D2;
+	-fx-border-width: 0px 4px 0px 0px;
+	-fx-background-color: #313538;
+	-fx-cursor: hand;
+	
+}
+
+.hover_children:hover * {
+	-fx-fill:  #6798D2;
+}
+
+.focused_border:focused {
+	-fx-border-color:  #6798D2;
+	-fx-border-width: 0px 4px 0px 0px;
+	-fx-background-color: #313538;
+}
+
+.focused_children:focused * {
+	-fx-text-fill: #f1eff4; 
+	-fx-fill:  #6798D2;
+	
+}
+
+
+.cursor_hand{
+	-fx-cursor: hand;
+}
+
+.border_radius
+{
+	-fx-border-radius: 0;
+}
+
+/*TAB PANE */
+.tab-header-background {
+    -fx-background-color:transparent;
+  
+}
+
+.tab-pane {
+    -fx-tab-min-width:100px;
+    -fx-tab-max-width:100px;
+    -fx-tab-min-height:45px;
+    -fx-tab-max-height:45px;
+    
+}
+
+.tab {
+    -fx-background-color: #6798D2;
+    -fx-text-fill: #F1EFF4;
+    -fx-font-size: 14px;
+    -fx-background-radius: 0;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+.tab:selected {
+    -fx-background-color: #54595D;
+    -fx-text-fill: #F1EFF4;
+   	
+
+}
+
+.tab:selected .tab-label {
+    -fx-text-fill: #F1EFF4;
+} 
+/* */
+
+.text-fill
+{
+	-fx-text-fill: #F1EFF4;
+}
+
+.jfx-text-field, .jfx-password-field {
+    -fx-prompt-text-fill: #F1EFF4;
+}
+
+/*PROGRESS BAR */
+/* 
+.progress-bar > .track {
+  -fx-text-box-border: green;
+  -fx-control-inner-background: grey;
+}
+*/
+.progress-bar .bar {
+    -fx-background-color: #6798D2;
+    -fx-background-insets: 3;
+    -fx-padding: 1em;
+}
+.progress-bar:indeterminate .bar {  
+    -fx-background-color: #6798D2;
+    -fx-border-style:none;
+}
+.progress-bar .track {
+    -fx-background-color: -fx-box-border, #F1EFF4; 
+}
+
+/************************************** */
+/*PIECHART */
+
+.chart-pie-label-line {
+    -fx-stroke:  #F1EFF4;
+    -fx-fill:  #F1EFF4;
+}
+.chart-pie{
+  -fx-border-color: #54595D;
+  -fx-border-width: 4;
+}
+ 
+.chart-pie-label {
+    -fx-fill: #F1EFF4;
+    -fx-font-size: 1em;
+} 
+.chart-legend {
+  -fx-background-color: #54595D;
+
+}
+.chart-legend *{
+  -fx-text-fill: #F1EFF4;
+}
+
+.default-color0.chart-pie { -fx-pie-color: #55efc4; }
+.default-color1.chart-pie { -fx-pie-color: #0984e3; }
+.default-color2.chart-pie { -fx-pie-color: #6c5ce7; }
+.default-color3.chart-pie { -fx-pie-color: #e84393; }
+.default-color4.chart-pie { -fx-pie-color: #dfe6e9; }
+/*************************************** */
+
+/*DIALOG PANE */
+/* 
+.myDialog{
+    -fx-border-color: black; 
+    -fx-border-width: 5; 
+    -fx-border-radius: 10;
+}
+.myDialog > *.button-bar > *.container{
+    -fx-background-color: #a9e200;
+}
+.myDialog > *.label.content{
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+.myDialog:header *.header-panel{
+    -fx-background-color: #a59c31;
+}
+.myDialog:header *.header-panel *.label{
+    -fx-font-size: 18px;
+    -fx-font-style: italic;
+    -fx-fill: #292929;
+}
+*/
+ 
+ /****************************************/
+/*DATE PICKER */
+.jfx-date-picker .input-line {
+    -fx-background-color: #8ec461;
+}
+
+.jfx-date-picker .input-focused-line {
+    -fx-background-color: #8ec461;
+}
+
+.jfx-date-picker .text-field{
+  -fx-prompt-text-fill: #f1eff4;
+  -fx-text-fill: #f1eff4;
+  
+}
+/****************************************/
+
+/*COMBO BOX */
+
+.jfx-combo-box {
+	-fx-background-color:  transparent;
+}
+
+
+.jfx-combo-box .label {
+	-fx-background-color:  WHITE;
+	-fx-text-fill: RED;
+}
+
+
+/****************************************/
+
+
+
+
+
+
+
+

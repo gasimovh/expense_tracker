@@ -1,0 +1,54 @@
+
+/*DIALOG PANE */
+.myDialog{
+    -fx-border-color: #313538; 
+    -fx-border-width: 2.0; 
+    -fx-border-radius: 0;
+}
+.myDialog > *.button-bar > *.container{
+    -fx-background-color:  #54595D;
+}
+.myDialog > *.label.content{
+    -fx-font-size: 12.0px;
+    -fx-font-weight: bold;
+}
+.myDialog:header *.header-panel{
+    -fx-background-color:  #54595D;
+}
+.myDialog:header *.header-panel *.label{
+    -fx-font-size: 18.0px;
+    -fx-text-fill: #8ec461;
+}
+
+.dialog-pane > .content.label {
+   -fx-background-color: #54595D;
+   -fx-text-fill:#f1eff4;
+   -fx-font-size:12.0px;
+}
+
+.dialog-pane .button{
+    -fx-background-color:#6798D2;
+	-fx-text-fill:#f1eff4;
+	-fx-wrap-text: true;
+	/*-fx-effect: dropshadow( three-pass-box, #6798D2, 10.0, 0.0, 0.0, 0.0);*/
+	-fx-cursor:hand;
+	-fx-border-radius: 0;
+	
+}
+
+.dialog-pane .button:hover{     
+	-fx-background-color:#313538;
+	-fx-text-fill:#f1eff4;
+	-fx-font-weight:bold; 
+}
+
+ /****************************************/
+
+
+
+
+
+
+
+
+

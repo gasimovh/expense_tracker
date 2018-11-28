@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="borderPane" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainPageController">
+   <top>
+      <HBox prefHeight="50.0" prefWidth="700.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefWidth="220.0" style="-fx-background-color: #6798D2;">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Quicksand; -fx-font-weight: bold; -fx-fill: white;" text="EXpence Tracker">
+                     <HBox.margin>
+                        <Insets bottom="15.0" left="30.0" right="15.0" top="15.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+               <effect>
+                  <InnerShadow color="#315f94" />
+               </effect>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT">
+               <children>
+                  <HBox alignment="CENTER_LEFT" nodeOrientation="RIGHT_TO_LEFT" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #54595D;">
+                     <children>
+                        <JFXTextField alignment="CENTER_RIGHT" focusColor="#8ec461" promptText="Search" styleClass="text-fill" stylesheets="@mycss.css" unFocusColor="#8ec461">
+                           <HBox.margin>
+                              <Insets left="37.0" />
+                           </HBox.margin>
+                        </JFXTextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #54595D;" />
+                  <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #54595D;">
+                     <children>
+                        <FontAwesomeIconView fx:id="power" fill="#8ec461" glyphName="POWER_OFF" size="21" styleClass="cursor_hand">
+                           <HBox.margin>
+                              <Insets right="15.0" />
+                           </HBox.margin></FontAwesomeIconView>
+                        <FontAwesomeIconView fill="#8ec461" glyphName="BELL" size="21" styleClass="cursor_hand">
+                           <HBox.margin>
+                              <Insets right="15.0" />
+                           </HBox.margin>
+                        </FontAwesomeIconView>
+                        <FontAwesomeIconView fill="#8ec461" glyphName="USER" size="25" styleClass="cursor_hand" />
+                     </children>
+                     <padding>
+                        <Insets right="15.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+   </top>
+   <left>
+      <VBox prefHeight="400.0" prefWidth="160.0" style="-fx-background-color: #54595D;" BorderPane.alignment="CENTER">
+         <children>
+            <JFXButton contentDisplay="TOP" onAction="#showOverview" prefHeight="70.0" prefWidth="160.0" stylesheets="@mycss.css" text="Overview" textFill="#f1eff4">
+               <graphic>
+                  <FontAwesomeIconView fill="#8ec461" glyphName="TH_LIST" size="20" />
+               </graphic>
+               <VBox.margin>
+                  <Insets top="40.0" />
+               </VBox.margin>
+               <styleClass>
+                  <String fx:value="focused_border" />
+                  <String fx:value="hover_border" />
+                  <String fx:value="border_radius" />
+               </styleClass>
+            </JFXButton>
+            <JFXButton contentDisplay="TOP" layoutX="10.0" layoutY="10.0" onAction="#showStatistics" prefHeight="70.0" prefWidth="160.0" stylesheets="@mycss.css" text="Statistics" textFill="#f1eff4">
+               <graphic>
+                  <FontAwesomeIconView fill="#8ec461" glyphName="LINE_CHART" size="20" />
+               </graphic>
+               <styleClass>
+                  <String fx:value="focused_border" />
+                  <String fx:value="hover_border" />
+                  <String fx:value="border_radius" />
+               </styleClass>
+            </JFXButton>
+            <JFXButton contentDisplay="TOP" layoutX="10.0" layoutY="10.0" onAction="#showBudget" prefHeight="70.0" prefWidth="160.0" stylesheets="@mycss.css" text="Budget" textFill="#f1eff4">
+               <graphic>
+                  <FontAwesomeIconView fill="#8ec461" glyphName="BITCOIN" size="20" />
+               </graphic>
+               <styleClass>
+                  <String fx:value="focused_border" />
+                  <String fx:value="hover_border" />
+                  <String fx:value="border_radius" />
+               </styleClass>
+            </JFXButton>
+            <JFXButton contentDisplay="TOP" layoutX="10.0" layoutY="35.0" onAction="#showEvents" prefHeight="70.0" prefWidth="160.0" stylesheets="@mycss.css" text="Events" textFill="#f1eff4">
+               <graphic>
+                  <FontAwesomeIconView fill="#8ec461" glyphName="CALENDAR_PLUS_ALT" size="20" />
+               </graphic>
+               <styleClass>
+                  <String fx:value="focused_border" />
+                  <String fx:value="hover_border" />
+                  <String fx:value="border_radius" />
+               </styleClass>
+            </JFXButton>
+            <FontAwesomeIconView fill="#313538" glyphName="INFO_CIRCLE" size="15" style="-fx-cursor: hand;">
+               <VBox.margin>
+                  <Insets left="5.0" top="60.0" />
+               </VBox.margin>
+            </FontAwesomeIconView>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <left>
+            <VBox BorderPane.alignment="CENTER" />
+         </left>
+         <right>
+            <VBox BorderPane.alignment="CENTER" />
+         </right>
+         <center>
+            <Pane fx:id="content" style="-fx-background-color: #54595D;" BorderPane.alignment="CENTER">
+               <effect>
+                  <InnerShadow color="#3f4345b5" />
+               </effect>
+            </Pane>
+         </center>
+      </BorderPane>
+   </center>
+</BorderPane>
