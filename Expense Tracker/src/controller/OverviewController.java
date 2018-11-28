@@ -39,8 +39,6 @@ public class OverviewController implements Initializable{
 
     			Scene scene = new Scene(root);
 
-    			//scene.getStylesheets().add(getClass().getResource("../view/mycss.css").toExternalForm());
-    			
     			Stage stage = new Stage();
 
     			stage.initStyle(StageStyle.UNDECORATED);

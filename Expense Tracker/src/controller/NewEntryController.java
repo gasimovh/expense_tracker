@@ -32,30 +32,10 @@ public class NewEntryController implements Initializable {
 
     @FXML
     private JFXComboBox<?> category;
-    
-//    private MainPageController mpc;
 
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
-		// TODO Auto-generated method stub
-		//mpc.getContent().getParent().getParent()).setEffect(new BoxBlur(2, 2, 2)
-		//((Node) mpc.getContent().getParent().getParent()).setEffect(new BoxBlur(2, 2, 2));
-		
-		
-//		mpc = new MainPageController();
-//		mpc.setBoxBlurEffect();
-		
-		
-//		try {
-//			FXMLLoader loader = new FXMLLoader(getClass().getResource("../view/MainPage.fxml"));
-//			Parent parent = loader.load();
-//			MainPageController mpc = (MainPageController) loader.getController();
-//			//mpc.setBoxBlurEffect();
-//			mpc.getBorderPane().setEffect(new BoxBlur(2, 2, 2));
-//			
-//		} catch (IOException e) {
-//			e.printStackTrace();
-//		}
+
 		
 	}
 
@@ -64,7 +44,6 @@ public class NewEntryController implements Initializable {
     void cancel(ActionEvent event) 
 	{
 		((Stage) price.getScene().getWindow()).close();
-		//((Node) mpc.getContent().getParent().getParent()).setEffect(new BoxBlur(0, 0, 0));
     }
 
     @FXML

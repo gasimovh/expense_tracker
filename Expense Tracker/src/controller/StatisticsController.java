@@ -25,9 +25,6 @@ public class StatisticsController implements Initializable{
 	@FXML
 	private PieChart chart;
 	
-//	@FXML
-//	private Label caption;
-	
 	@Override
 	public void initialize(URL location, ResourceBundle resources) 
 	{
@@ -46,7 +43,6 @@ public class StatisticsController implements Initializable{
                 new PieChart.Data("Drink", 22),
                 new PieChart.Data("Rent", 30));
 		chart = new DoughnutChart(pieChartData);
-        //chart.setTitle("Daily");
         pane.getChildren().add(chart);
         
         chart.setLabelLineLength(10);
@@ -64,22 +60,5 @@ public class StatisticsController implements Initializable{
     	
     }
 	
-//	public void showPercentage() {
-//		caption.setTextFill(Color.rgb(241, 239, 244));
-//		caption.setStyle("-fx-font: 14 arial;");
-//		// caption.layoutXProperty().bind(chart.widthProperty().subtract(caption.widthProperty()).divide(2));
-//		// caption.layoutYProperty().bind(chart.heightProperty().subtract(caption.heightProperty()).divide(2));
-//		for (PieChart.Data data : chart.getData()) {
-//			data.getNode().addEventHandler(MouseEvent.MOUSE_PRESSED, new EventHandler<MouseEvent>() {
-//				@Override
-//				public void handle(MouseEvent e) {
-//					// caption.setTranslateX(e.getSceneX());
-//					// caption.setTranslateY(e.getSceneY());
-//					caption.setText(String.valueOf(data.getPieValue()) + "%");
-//					// System.out.println(e.getSceneX() + "***" + e.getSceneY());
-//				}
-//			});
-//		}
-//	}
 
 }
